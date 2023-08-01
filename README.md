@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Isadora-Coelho
 - 👀 I’m interested in CC and Data Science
-- 🌱 I’m currently learning Data Analysis, Python, Computer Science student.
+- 🌱 I’m currently learning Data Analytics, Python, Computer Science student.
 - 📫 How to reach me isadoracsilva7@gmail.com
 
 <!---

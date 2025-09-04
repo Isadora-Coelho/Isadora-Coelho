@@ -1,0 +1,390 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNUhlTKTycl6ZDjf1pPKr9c",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Isadora-Coelho/Isadora-Coelho/blob/main/exercicios\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#1\n",
+        "nome = input('Digite seu nome')\n",
+        "print('Olá,', nome, '!')"
+      ],
+      "metadata": {
+        "id": "l66rKZxYjRFe",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8a7c936b-0d1e-43bf-c68d-13a75da1ad82"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, Isadora !\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2\n",
+        "a = input('Digite um número')\n",
+        "b = input('Digite outro número')\n",
+        "converte_a = int(a)\n",
+        "converte_b = int(b)\n",
+        "print('A soma é igual a', converte_a + converte_b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ywjRoFymZOSy",
+        "outputId": "d30cb3b7-959c-4342-a836-4d1a306da7f7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número1\n",
+            "Digite outro número2\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3\n",
+        "a = input('Digite o número que quer dobrar ')\n",
+        "converte_a = int(a)\n",
+        "converte_a = converte_a *2\n",
+        "print('O dobro de', a, 'é igual a', converte_a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ooAv0Vc6aPDm",
+        "outputId": "535164d7-f949-4cb2-fe62-748c1a8394f0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o número que quer dobrar 2\n",
+            "O dobro de  2 é igual a 4\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#4\n",
+        "data_nascimento = input('Digite sua data de nascimento')\n",
+        "data_nascimento = data_nascimento.split('/')\n",
+        "data_nascimento[2] = int(data_nascimento[2])\n",
+        "idade = 2025 - data_nascimento[2]\n",
+        "print('Você tem', idade, 'anos')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bFLVwpYtafMB",
+        "outputId": "f9c0dd83-4877-4ef7-e534-a34b616a2dda"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua data de nascimento14/04/2005\n",
+            "Você tem 20 anos\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#5\n",
+        "metros = input('Digite a quantidade em metros')\n",
+        "metros = int(metros)\n",
+        "cm = metros * 100\n",
+        "print(metros, 'metros em cm fica igual a', cm)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jScHe8mjd6tm",
+        "outputId": "a489a3d4-0c43-44ad-dee2-c3db17e4c14b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a quantidade em metros5\n",
+            "5 metros em cm fica igual a 500\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#6\n",
+        "n1 = input('Digite o número ')\n",
+        "n1 = int(n1)\n",
+        "antecessor = n1 - 1\n",
+        "sucessor = n1 + 1\n",
+        "print('O antecessor do número digitado é', antecessor, 'e o sucessor', sucessor,'\\n Sendo assim, a ordem fica', antecessor, n1, sucessor)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c5VMTUCugIh3",
+        "outputId": "f02a5848-fecc-4167-d3b1-5cdea3c3f281"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o número 10\n",
+            "O antecessor do número digitado é 9 e o sucessor 11 \n",
+            " Sendo assim, a ordem fica 9 10 11\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#7\n",
+        "n1 = input('Digite a primeira nota')\n",
+        "n2 = input('Digite a segunda nota')\n",
+        "n1_nota = int(n1)\n",
+        "n2_nota = int(n2)\n",
+        "media = n1_nota/n2_nota\n",
+        "print('A média é', media)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1-ontDjjiDfJ",
+        "outputId": "e99051a3-06b6-401a-9e89-d21f5f1baf63"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a primeira nota3\n",
+            "Digite a segunda nota4\n",
+            "A média é 0.75\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#8\n",
+        "a = input('Digite a largura da parede')\n",
+        "b = input('Digite a altura da parede')\n",
+        "largura= int(a)\n",
+        "altura = int(b)\n",
+        "area = largura * altura\n",
+        "print('A área da parede é', area, 'm²')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PQc7NpdjlnRs",
+        "outputId": "c1c2bc83-594d-44e3-f662-652aa399db23"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a largura da parede5\n",
+            "Digite a altura da parede4\n",
+            "A área da parede é 20 m²\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temp_input = input('Digite a temperatura em Celsius')\n",
+        "temp = int(temp_input)\n",
+        "temp_f =temp * 1.8 + 32\n",
+        "print('A conversão da temperatura de Cº para Fº resulta em', temp_f)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YqNgkzTcY9JZ",
+        "outputId": "70a540c1-35b8-4c1c-a673-96451c19becb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a temperatura em Celsius32\n",
+            "A conversão da temperatura de Cº para Fº resulta em 89.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "palavra = input('Digite uma palavra ')\n",
+        "numero = input('Digite um número')\n",
+        "numero_repeticao = int(numero)\n",
+        "print(palavra * numero_repeticao)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ahf0_nqNKtTU",
+        "outputId": "67f427b0-ded3-48b1-c238-f28a0ee006a5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma palavraoi\n",
+            "Digite um número3\n",
+            "oioioi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = input('Digite o valor do produto')\n",
+        "n2 = input('Digite o valor do desconto')\n",
+        "valor = int(n1)\n",
+        "desconto = int(n2)\n",
+        "valor_final = valor / desconto\n",
+        "valor_final = valor - valor_final\n",
+        "print(valor_final)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5DhOuQ31Px7U",
+        "outputId": "365f4424-af47-4088-fb52-e7ef2534543e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o valor do produto100\n",
+            "Digite o valor do desconto10\n",
+            "90.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "distancia = input('Digite a distância percorrida em km ')\n",
+        "velocidade = input('Digite a velocidade média em km/h ')\n",
+        "dist = int(distancia)\n",
+        "vel = int(velocidade)\n",
+        "\n",
+        "tempo = dist/vel\n",
+        "print('O tempo estimado de viagem é de', tempo, 'horas')\n"
+      ],
+      "metadata": {
+        "id": "wmlgOVMoXXlC",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "894434a7-6c7f-435f-9960-b3975009f8be"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a distância percorrida em km 10\n",
+            "Digite a velocidade média em km/h 1\n",
+            "O tempo estimado de viagem é de 10.0 horas\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Exercício 13 — Conversor de minutos para horas e minutos\n",
+        "Peça um número inteiro de minutos e converta para horas e minutos.\n",
+        "💡 Exemplo: 130 minutos → 2 horas e 10 minutos."
+      ],
+      "metadata": {
+        "id": "8VIGUJGRpKfb"
+      }
+    }
+  ]
+}
